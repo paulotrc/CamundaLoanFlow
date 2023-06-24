@@ -1,0 +1,51 @@
+version: "3.7"
+
+services:
+      
+  #Camunda DB
+  postgres-db-camunda:
+    container_name: postgres-db-camunda
+    image: postgres:${CAMUNDA_DB_POSTGRES_VERSION}
+    command: postgres -c 'max_connections=200'
+    volumes:
+      - ./databases/pgdata-db-camunda:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB: ${CAMUNDA_DB_POSTGRES_DB}
+      POSTGRES_USER: ${CAMUNDA_DB_POSTGRES_USER}
+      POSTGRES_PASSWORD: ${CAMUNDA_DB_POSTGRES_PASSWORD}
+      DATABASE_HOST: ${CAMUNDA_DB_POSTGRES_HOST}
+    healthcheck:    
+      test: "exit 0"
+    ports:
+      - "5432:5432"  
+    networks:
+      - stack1-network
+      
+  #cli Database
+  mongo-db-cli:
+    container_name: mongo-db-cli
+    image: mongo:${CLI_DB_MONGO_VERSION}
+    restart: always
+    volumes:
+      - ./databases/cli-mongo-volume:/data/db
+    environment:
+      MONGO_INITDB_DATABASE: ${CLI_DB_MONGO_DATABASE}
+      MONGO_INITDB_ROOT_USERNAME: ${CLI_DB_MONGO_ROOT_USERNAME}
+      MONGO_INITDB_ROOT_PASSWORD: ${CLI_DB_MONGO_ROOT_PASSWORD}
+    ports:
+      - "27017:27017"  
+    networks:
+      - stack1-network
+  
+    
+volumes:
+  pgdata-db-camunda:
+  cli-mongo-volume:
+  
+
+networks:
+  stack1-network:
+    driver: bridge  
+    
+    
+ 

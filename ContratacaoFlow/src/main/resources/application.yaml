@@ -1,0 +1,138 @@
+spring:
+  application:
+    name: contratacaoflow
+  datasource:
+    url: jdbc:postgresql://localhost:5432/camunda
+    username: camunda_adm
+    password: camunda_adm
+
+server:
+  port: 8081
+  servlet:
+    context-path: /orquestrador
+
+## Camunda configuration
+## https://docs.camunda.org/manual/latest/user-guide/spring-boot-integration/configuration/#camunda-engine-properties
+camunda:
+  bpm:
+    eventing:
+      execution: true
+      history: false
+      task: true
+    webapp.index-redirect-enabled: false
+    admin-user:
+      id: admin
+      password: admin
+    process-engine-name: default
+    id-generator: strong
+    job-execution:
+      active: true
+      lockTimeInMillis: 300000
+      max-pool-size: 10
+      core-pool-size: 3
+    database:
+      schema-update: true
+
+management:
+  server:
+    port: 9090
+  context-path: /actuator
+  endpoint:
+    metrics:
+      enabled: true
+    prometheus:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  metrics:
+    export:
+      prometheus:
+        enabled: true
+    tags:
+      application: ${spring.application.name}
+
+# custom path for swagger-ui
+springdoc:
+  swagger-ui:
+    path: /swaggerui.html
+    operationsSorter: alpha
+    tagsSorter: alpha
+  # custom path for api docs
+  api-docs:
+    path: /api-docs
+
+logging:
+  pattern:
+    default: '{"Timestamp": "%d{yyyy-MM-dd HH:mm:ss.SSS}", "LogType": "%-5p", "AppName": "${spring.application.name}", "TraceId": "%X{traceId:--}", "SpanId": "%X{spanId:--}", "TraceFlags": "%X{trace_flags:--}", "PID": "${PID}", "Thread": "%thread", "Message": %m}%n'
+    console: ${logging.pattern.default}
+
+svc:
+  clientes:
+    url: http://localhost:8091/svc-clientes/api/v1/cliente/
+  imovel:
+    url: http://localhost:8093/svc-imovel/api/v1/imovel/
+  automovel:
+    url: http://localhost:8094/svc-automovel/api/v1/automovel/
+  spc:
+    url: http://localhost:8096/svc-spc/api/v1/spc/
+  serasa:
+    url: http://localhost:8092/svc-serasa/api/v1/serasa/
+  bacen:
+    url: http://localhost:8095/svc-bacen/api/v1/bacen/
+  riscocliente:
+    url: http://localhost:8097/svc-riscocliente/api/v1/riscocliente/
+
+resilience4j:
+  circuitbreaker:
+    instances:
+      processServiceCliente:
+        slidingWindowSize: 50
+        minimumNumberOfCalls: 10
+        permittedNumberOfCallsInHalfOpenState: 5
+        #failureRateThreshold: 50
+        waitDurationInOpenState: 20s
+      processService:
+        # tamanho da janela deslizante que é usada para registrar o resultado das chamadas quando o CircuitBreaker é fechado
+        slidingWindowSize: 50
+        # numero de chamadas permitidas quando estado meio aberto
+        permittedNumberOfCallsInHalfOpenState: 5
+        # tamanho da janela deslizante que é usada para registrar o resultado das chamadas quando o CircuitBreaker é fechado
+        #        slidingWindowType: TIME_BASED
+        # número mínimo de chamadas que são necessárias (por período de janela deslizante) antes que o CircuitBreaker possa calcular a taxa de erro ou a taxa de chamada lenta.
+        minimumNumberOfCalls: 10
+        # tempo que o CircuitBreaker deve esperar antes de fazer a transição de aberto para semiaberto
+        waitDurationInOpenState: 20s
+        # limite da taxa de falha em porcentagem. Quando a taxa de falha é igual ou maior que o limite, o CircuitBreaker faz a transição para abrir e inicia chamadas de curto-circuito
+  #        failureRateThreshold: 50
+  retry:
+    instances:
+      default:
+        max-attempts: 3
+        wait-duration: 1s
+
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 20000
+        readTimeout: 10000
+      cliente:
+        connectTimeout: 40000
+        readTimeout: 10000
+      imovel:
+        connectTimeout: 40000
+        readTimeout: 10000
+      automovel:
+        connectTimeout: 40000
+        readTimeout: 10000
+      bacen:
+        connectTimeout: 40000
+        readTimeout: 10000
+      spc:
+        connectTimeout: 40000
+        readTimeout: 10000
+      serasa:
+        connectTimeout: 40000
+        readTimeout: 10000
