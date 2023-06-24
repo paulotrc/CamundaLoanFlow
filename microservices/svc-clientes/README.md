@@ -1,2 +1,2 @@
-# Microservice `svc-clientes` with `Springboot`
+# Microservice `svc-clientes` with `Springboot v2.7.5 and Java 11`
 ## Microservice for search customers
