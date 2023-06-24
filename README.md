@@ -9,12 +9,12 @@ This is an implementation of `Camunda Orchestration` for `Microservices` whit `J
 
 1️⃣ - The first sub-flow is the flow where the data of Automobiles :blue_car: and Real Estate :house: declared by the customer for the loan evaluation are searched. :point_down:
 
-![The Main Flow](/img/SubFlowConsultaBens.png)
+![SubFlowConsultaBens](/img/SubFlowConsultaBens.png)
 
 2️⃣ - The second sub-flow is the flow where the data of name restrictions are searched :mag_right: . :point_down:
 
-![The Main Flow](/Cimg/SubFlowConsultaRestricoesCliente.png)
+![SubFlowConsultaRestricoesCliente](/img/SubFlowConsultaRestricoesCliente.png)
 
 3️⃣ - The third sub-flow and the last one for this first implementation is the flow where the data of name restrictions are registered for future avaliations :clock4: . :point_down:
 
-![The Main Flow](/img/SubFlowCadastroRiscoCliente.png)
+![SubFlowCadastroRiscoCliente](/img/SubFlowCadastroRiscoCliente.png)
