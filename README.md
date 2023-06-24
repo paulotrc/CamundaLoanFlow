@@ -1,6 +1,6 @@
 # Camunda Orchestration Loan Flow 
 ## :gear: Repo for Camunda Loan Flow 
-### This is an implementation of `Camunda Orchestration` for `Microservices` whit `Java`. 
+### This is an implementation of `Microservices Orchestration` with `Camunda` and `Java`. 
 
 0️⃣ - The first flow is the main flow where define a Loan contraction exemple. :point_down:
 
