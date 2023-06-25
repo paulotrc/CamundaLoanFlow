@@ -1,4 +1,4 @@
-package br.paulotrc.svcautomovel.entites.feign;
+package br.paulotrc.svcautomovel.entities.feign;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -6,13 +6,17 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class Erro {
-    @JsonProperty("mensagem")
-    private String mensagem;
-    @JsonProperty("codigo")
-    private String codigo;
+public class Erros {
+
+    @JsonProperty("erro")
+    private List<Erro> erro;
+    @JsonProperty("msgErro")
+    private String msgErro;
+
 }

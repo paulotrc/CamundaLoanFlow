@@ -1,4 +1,4 @@
-package br.paulotrc.svcautomovel.entites.validators;
+package br.paulotrc.svcautomovel.entities.validators;
 
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
@@ -6,11 +6,11 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.regex.PatternSyntaxException;
 
-public class TipoRestricaoAutomovelPatternValidator implements ConstraintValidator<TipoRestricaoAutomovelValidator, Enum<?>> {
+public class TipoAutomovelPatternValidator implements ConstraintValidator<TipoAutomovelValidator, Enum<?>> {
     private Pattern pattern;
 
     @Override
-    public void initialize(TipoRestricaoAutomovelValidator annotation) {
+    public void initialize(TipoAutomovelValidator annotation) {
         try {
             pattern = Pattern.compile(annotation.regexp());
         } catch (PatternSyntaxException e) {
@@ -20,8 +20,8 @@ public class TipoRestricaoAutomovelPatternValidator implements ConstraintValidat
 
     @Override
     public boolean isValid(Enum<?> value, ConstraintValidatorContext context) {
-        if (value == null) {
-            return true;
+        if (null == value) {
+            return false;
         }
 
         Matcher m = pattern.matcher(value.name());

@@ -1,4 +1,4 @@
-package br.paulotrc.svcautomovel.entites.feign;
+package br.paulotrc.svcautomovel.entities.feign;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

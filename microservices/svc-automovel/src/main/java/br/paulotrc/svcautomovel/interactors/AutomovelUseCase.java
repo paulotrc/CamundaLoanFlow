@@ -1,6 +1,6 @@
-package br.paulotrc.svcautomovel.iteractors;
+package br.paulotrc.svcautomovel.interactors;
 
-import br.paulotrc.svcautomovel.entites.Automovel;
+import br.paulotrc.svcautomovel.entities.Automovel;
 import br.paulotrc.svcautomovel.repositories.AutomovelRepository;
 import org.springframework.stereotype.Service;
 

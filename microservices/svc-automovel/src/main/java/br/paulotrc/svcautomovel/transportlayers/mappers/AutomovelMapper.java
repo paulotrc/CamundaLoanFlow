@@ -1,6 +1,6 @@
 package br.paulotrc.svcautomovel.transportlayers.mappers;
 
-import br.paulotrc.svcautomovel.entites.Automovel;
+import br.paulotrc.svcautomovel.entities.Automovel;
 import br.paulotrc.svcautomovel.transportlayers.dto.request.AutomovelRequest;
 import br.paulotrc.svcautomovel.transportlayers.dto.response.AutomovelResponse;
 import org.mapstruct.Mapper;

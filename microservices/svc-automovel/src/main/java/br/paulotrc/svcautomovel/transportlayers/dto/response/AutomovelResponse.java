@@ -1,15 +1,11 @@
 package br.paulotrc.svcautomovel.transportlayers.dto.response;
 
-import br.paulotrc.svcautomovel.entites.enumerados.TipoAutomovel;
-import br.paulotrc.svcautomovel.entites.enumerados.TipoRestricaoAutomovel;
-import br.paulotrc.svcautomovel.entites.validators.TipoAutomovelValidator;
-import br.paulotrc.svcautomovel.entites.validators.TipoRestricaoAutomovelValidator;
+import br.paulotrc.svcautomovel.entities.enumerados.TipoAutomovel;
+import br.paulotrc.svcautomovel.entities.enumerados.TipoRestricaoAutomovel;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 
-import javax.validation.constraints.*;
-import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.UUID;
 

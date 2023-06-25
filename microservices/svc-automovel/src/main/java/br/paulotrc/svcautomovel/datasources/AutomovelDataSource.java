@@ -1,6 +1,6 @@
 package br.paulotrc.svcautomovel.datasources;
 
-import br.paulotrc.svcautomovel.entites.Automovel;
+import br.paulotrc.svcautomovel.entities.Automovel;
 import br.paulotrc.svcautomovel.repositories.AutomovelRepository;
 import br.paulotrc.svcautomovel.repositories.MongoAutomovelRepository;
 import lombok.AllArgsConstructor;

@@ -1,4 +1,4 @@
-package br.paulotrc.svcautomovel.entites.validators;
+package br.paulotrc.svcautomovel.entities.validators;
 
 import javax.validation.Constraint;
 import javax.validation.Payload;

@@ -1,4 +1,4 @@
-package br.paulotrc.svcautomovel.entites.enumerados;
+package br.paulotrc.svcautomovel.entities.enumerados;
 
 public enum TipoAutomovel {
 

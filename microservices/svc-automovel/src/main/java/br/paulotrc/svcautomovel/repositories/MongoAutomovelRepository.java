@@ -1,6 +1,6 @@
 package br.paulotrc.svcautomovel.repositories;
 
-import br.paulotrc.svcautomovel.entites.Automovel;
+import br.paulotrc.svcautomovel.entities.Automovel;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.mongodb.repository.Query;
 

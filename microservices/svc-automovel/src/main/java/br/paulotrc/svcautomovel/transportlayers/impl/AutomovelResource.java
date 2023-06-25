@@ -1,9 +1,9 @@
 package br.paulotrc.svcautomovel.transportlayers.impl;
 
-import br.paulotrc.svcautomovel.entites.Automovel;
+import br.paulotrc.svcautomovel.entities.Automovel;
 import br.paulotrc.svcautomovel.exceptions.ExceptionUtil;
 import br.paulotrc.svcautomovel.exceptions.ResourceException;
-import br.paulotrc.svcautomovel.iteractors.AutomovelUseCase;
+import br.paulotrc.svcautomovel.interactors.AutomovelUseCase;
 import br.paulotrc.svcautomovel.transportlayers.AutomovelResourceI;
 import br.paulotrc.svcautomovel.transportlayers.dto.request.AutomovelRequest;
 import br.paulotrc.svcautomovel.transportlayers.dto.response.AutomovelResponse;

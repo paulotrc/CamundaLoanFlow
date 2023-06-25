@@ -1,6 +1,4 @@
-package br.paulotrc.svcautomovel.entites.validators;
-
-import br.paulotrc.svcautomovel.entites.validators.TipoAutomovelPatternValidator;
+package br.paulotrc.svcautomovel.entities.validators;
 
 import static java.lang.annotation.ElementType.*;
 import static java.lang.annotation.RetentionPolicy.*;
