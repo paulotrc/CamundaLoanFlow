@@ -16,6 +16,7 @@ public class Erros {
 
     @JsonProperty("erro")
     private List<Erro> erro;
+
     @JsonProperty("msgErro")
     private String msgErro;
 

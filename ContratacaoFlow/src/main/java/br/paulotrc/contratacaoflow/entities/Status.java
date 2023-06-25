@@ -11,8 +11,10 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Status {
+
     @JsonProperty("codigo")
     private String codigo;
+
     @JsonProperty("erros")
     private Erros erros;
 }
