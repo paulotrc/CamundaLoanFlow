@@ -1,4 +1,4 @@
-package br.paulotrc.contratacaoflow.iteractors;
+package br.paulotrc.contratacaoflow.interactors;
 
 import br.paulotrc.contratacaoflow.entities.EmprestimoRequest;
 import br.paulotrc.contratacaoflow.entities.EmprestimoResponse;

@@ -4,7 +4,7 @@ import br.paulotrc.contratacaoflow.entities.EmprestimoRequest;
 import br.paulotrc.contratacaoflow.entities.EmprestimoResponse;
 import br.paulotrc.contratacaoflow.exceptions.ExceptionUtil;
 import br.paulotrc.contratacaoflow.exceptions.ResourceException;
-import br.paulotrc.contratacaoflow.iteractors.EmprestimoUseCase;
+import br.paulotrc.contratacaoflow.interactors.EmprestimoUseCase;
 import br.paulotrc.contratacaoflow.transportlayers.EmprestimoResourceI;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
