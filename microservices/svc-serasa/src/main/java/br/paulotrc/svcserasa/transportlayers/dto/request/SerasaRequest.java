@@ -1,14 +1,13 @@
 package br.paulotrc.svcserasa.transportlayers.dto.request;
 
-import br.paulotrc.svcserasa.entites.enumerados.TipoRestricaoSerasa;
-import br.paulotrc.svcserasa.entites.validators.TipoRestricaoSerasaValidator;
+import br.paulotrc.svcserasa.entities.enumerados.TipoRestricaoSerasa;
+import br.paulotrc.svcserasa.entities.validators.TipoRestricaoSerasaValidator;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Positive;
 import javax.validation.constraints.PositiveOrZero;
 import java.math.BigDecimal;
 import java.util.UUID;

@@ -1,7 +1,7 @@
 package br.paulotrc.svcimovel.datasources;
 
-import br.paulotrc.svcimovel.entites.Imovel;
-import br.paulotrc.svcimovel.entites.feign.ResponseApiCepData;
+import br.paulotrc.svcimovel.entities.Imovel;
+import br.paulotrc.svcimovel.entities.feign.ResponseApiCepData;
 import br.paulotrc.svcimovel.exceptions.bussiness.CepInexistenteException;
 import br.paulotrc.svcimovel.exceptions.feign.GatewayResourceIntegrationRuntimeException;
 import br.paulotrc.svcimovel.repositories.ApiCepRepository;

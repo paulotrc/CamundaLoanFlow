@@ -1,6 +1,6 @@
 package br.paulotrc.svcbacen.transportlayers.mappers;
 
-import br.paulotrc.svcbacen.entites.Bacen;
+import br.paulotrc.svcbacen.entities.Bacen;
 import br.paulotrc.svcbacen.transportlayers.dto.request.BacenRequest;
 import br.paulotrc.svcbacen.transportlayers.dto.response.BacenResponse;
 import org.mapstruct.Mapper;

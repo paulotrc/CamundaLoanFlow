@@ -1,6 +1,6 @@
 package br.paulotrc.svcbacen.datasources;
 
-import br.paulotrc.svcbacen.entites.Bacen;
+import br.paulotrc.svcbacen.entities.Bacen;
 import br.paulotrc.svcbacen.repositories.BacenRepository;
 import br.paulotrc.svcbacen.repositories.MongoBacenRepository;
 import org.slf4j.Logger;

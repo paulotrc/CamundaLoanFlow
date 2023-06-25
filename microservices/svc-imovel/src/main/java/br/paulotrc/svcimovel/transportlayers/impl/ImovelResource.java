@@ -1,9 +1,9 @@
 package br.paulotrc.svcimovel.transportlayers.impl;
 
-import br.paulotrc.svcimovel.entites.Imovel;
+import br.paulotrc.svcimovel.entities.Imovel;
 import br.paulotrc.svcimovel.exceptions.ExceptionUtil;
 import br.paulotrc.svcimovel.exceptions.ResourceException;
-import br.paulotrc.svcimovel.iteractors.ImovelUseCase;
+import br.paulotrc.svcimovel.interactors.ImovelUseCase;
 import br.paulotrc.svcimovel.transportlayers.ImovelResourceI;
 import br.paulotrc.svcimovel.transportlayers.dto.request.ImovelRequest;
 import br.paulotrc.svcimovel.transportlayers.dto.response.ImovelResponse;

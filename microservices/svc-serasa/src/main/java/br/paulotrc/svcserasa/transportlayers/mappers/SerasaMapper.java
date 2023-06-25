@@ -1,6 +1,6 @@
 package br.paulotrc.svcserasa.transportlayers.mappers;
 
-import br.paulotrc.svcserasa.entites.Serasa;
+import br.paulotrc.svcserasa.entities.Serasa;
 import br.paulotrc.svcserasa.transportlayers.dto.request.SerasaRequest;
 import br.paulotrc.svcserasa.transportlayers.dto.response.SerasaResponse;
 import org.mapstruct.Mapper;

@@ -1,6 +1,6 @@
 package br.paulotrc.svcbacen.repositories;
 
-import br.paulotrc.svcbacen.entites.Bacen;
+import br.paulotrc.svcbacen.entities.Bacen;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.mongodb.repository.Query;
 

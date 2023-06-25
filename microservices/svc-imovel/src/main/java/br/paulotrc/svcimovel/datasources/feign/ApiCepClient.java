@@ -1,7 +1,7 @@
 package br.paulotrc.svcimovel.datasources.feign;
 
 import br.paulotrc.svcimovel.datasources.feign.configuration.apiCep.ApiCepClientConfiguration;
-import br.paulotrc.svcimovel.entites.feign.ResponseApiCepData;
+import br.paulotrc.svcimovel.entities.feign.ResponseApiCepData;
 import feign.Headers;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.stereotype.Service;

@@ -1,6 +1,6 @@
 package com.paulotrc.svcclientes.transportlayers.mappers;
 
-import com.paulotrc.svcclientes.entites.Cliente;
+import com.paulotrc.svcclientes.entities.Cliente;
 import com.paulotrc.svcclientes.transportlayers.dto.request.ClienteRequest;
 import com.paulotrc.svcclientes.transportlayers.dto.response.ClienteResponse;
 import org.mapstruct.Mapper;

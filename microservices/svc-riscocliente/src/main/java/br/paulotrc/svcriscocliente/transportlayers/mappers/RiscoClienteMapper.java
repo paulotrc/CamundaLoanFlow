@@ -1,6 +1,6 @@
 package br.paulotrc.svcriscocliente.transportlayers.mappers;
 
-import br.paulotrc.svcriscocliente.entites.RiscoCliente;
+import br.paulotrc.svcriscocliente.entities.RiscoCliente;
 import br.paulotrc.svcriscocliente.transportlayers.dto.request.RiscoClienteRequest;
 import br.paulotrc.svcriscocliente.transportlayers.dto.response.RiscoClienteResponse;
 import org.mapstruct.Mapper;

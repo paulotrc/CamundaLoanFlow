@@ -1,6 +1,6 @@
 package br.paulotrc.svcriscocliente.datasources;
 
-import br.paulotrc.svcriscocliente.entites.RiscoCliente;
+import br.paulotrc.svcriscocliente.entities.RiscoCliente;
 import br.paulotrc.svcriscocliente.repositories.RiscoClienteRepository;
 import br.paulotrc.svcriscocliente.repositories.MongoRiscoClienteRepository;
 import lombok.AllArgsConstructor;

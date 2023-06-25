@@ -1,6 +1,6 @@
 package br.paulotrc.svcbacen.transportlayers.dto.response;
 
-import br.paulotrc.svcbacen.entites.enumerados.TipoRestricaoBacen;
+import br.paulotrc.svcbacen.entities.enumerados.TipoRestricaoBacen;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;

@@ -1,16 +1,15 @@
 package com.paulotrc.svcclientes.transportlayers.impl;
 
-import com.paulotrc.svcclientes.entites.Cliente;
+import com.paulotrc.svcclientes.entities.Cliente;
 import com.paulotrc.svcclientes.exceptions.ExceptionUtil;
 import com.paulotrc.svcclientes.exceptions.ResourceException;
-import com.paulotrc.svcclientes.iteractors.ClienteUseCase;
+import com.paulotrc.svcclientes.interactors.ClienteUseCase;
 import com.paulotrc.svcclientes.transportlayers.ClienteResourceI;
 import com.paulotrc.svcclientes.transportlayers.dto.request.ClienteRequest;
 import com.paulotrc.svcclientes.transportlayers.dto.response.ClienteResponse;
 import com.paulotrc.svcclientes.transportlayers.mappers.ClienteMapper;
 import io.swagger.v3.oas.annotations.Parameter;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;

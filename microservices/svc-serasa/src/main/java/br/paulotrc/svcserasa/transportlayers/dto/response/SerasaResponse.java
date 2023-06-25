@@ -1,6 +1,6 @@
 package br.paulotrc.svcserasa.transportlayers.dto.response;
 
-import br.paulotrc.svcserasa.entites.enumerados.TipoRestricaoSerasa;
+import br.paulotrc.svcserasa.entities.enumerados.TipoRestricaoSerasa;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;

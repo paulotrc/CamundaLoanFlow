@@ -1,6 +1,6 @@
 package br.paulotrc.svcriscocliente.repositories;
 
-import br.paulotrc.svcriscocliente.entites.RiscoCliente;
+import br.paulotrc.svcriscocliente.entities.RiscoCliente;
 
 import java.util.List;
 

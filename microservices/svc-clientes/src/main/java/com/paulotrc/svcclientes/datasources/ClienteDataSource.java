@@ -1,6 +1,6 @@
 package com.paulotrc.svcclientes.datasources;
 
-import com.paulotrc.svcclientes.entites.Cliente;
+import com.paulotrc.svcclientes.entities.Cliente;
 import com.paulotrc.svcclientes.repositories.ClienteRepository;
 import com.paulotrc.svcclientes.repositories.MongoClienteRepository;
 import org.slf4j.Logger;

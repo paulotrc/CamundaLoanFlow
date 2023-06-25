@@ -1,7 +1,7 @@
 package br.paulotrc.svcbacen.transportlayers.dto.request;
 
-import br.paulotrc.svcbacen.entites.enumerados.TipoRestricaoBacen;
-import br.paulotrc.svcbacen.entites.validators.TipoRestricaoBacenValidator;
+import br.paulotrc.svcbacen.entities.enumerados.TipoRestricaoBacen;
+import br.paulotrc.svcbacen.entities.validators.TipoRestricaoBacenValidator;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;

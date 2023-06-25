@@ -1,7 +1,6 @@
 package br.paulotrc.svcspc.repositories;
 
-import br.paulotrc.svcspc.entites.Spc;
-import org.springframework.data.mongodb.repository.Query;
+import br.paulotrc.svcspc.entities.Spc;
 
 import java.util.List;
 

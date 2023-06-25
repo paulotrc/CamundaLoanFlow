@@ -1,8 +1,8 @@
 package br.paulotrc.svcriscocliente.transportlayers.dto.request;
 
-import br.paulotrc.svcriscocliente.entites.enumerados.TipoRiscoCliente;
-import br.paulotrc.svcriscocliente.entites.enumerados.TipoRestricaoRiscoCliente;
-import br.paulotrc.svcriscocliente.entites.validators.TipoRiscoClienteValidator;
+import br.paulotrc.svcriscocliente.entities.enumerados.TipoRiscoCliente;
+import br.paulotrc.svcriscocliente.entities.enumerados.TipoRestricaoRiscoCliente;
+import br.paulotrc.svcriscocliente.entities.validators.TipoRiscoClienteValidator;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;

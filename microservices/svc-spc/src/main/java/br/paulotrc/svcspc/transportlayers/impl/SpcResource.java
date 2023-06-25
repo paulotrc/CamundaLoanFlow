@@ -1,9 +1,9 @@
 package br.paulotrc.svcspc.transportlayers.impl;
 
-import br.paulotrc.svcspc.entites.Spc;
+import br.paulotrc.svcspc.entities.Spc;
 import br.paulotrc.svcspc.exceptions.ExceptionUtil;
 import br.paulotrc.svcspc.exceptions.ResourceException;
-import br.paulotrc.svcspc.iteractors.SpcUseCase;
+import br.paulotrc.svcspc.interactors.SpcUseCase;
 import br.paulotrc.svcspc.transportlayers.SpcResourceI;
 import br.paulotrc.svcspc.transportlayers.dto.request.SpcRequest;
 import br.paulotrc.svcspc.transportlayers.dto.response.SpcResponse;

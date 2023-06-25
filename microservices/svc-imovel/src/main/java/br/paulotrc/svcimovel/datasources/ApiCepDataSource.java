@@ -1,18 +1,12 @@
 package br.paulotrc.svcimovel.datasources;
 
 import br.paulotrc.svcimovel.datasources.feign.ApiCepClient;
-import br.paulotrc.svcimovel.entites.Imovel;
-import br.paulotrc.svcimovel.entites.feign.ResponseApiCepData;
+import br.paulotrc.svcimovel.entities.feign.ResponseApiCepData;
 import br.paulotrc.svcimovel.repositories.ApiCepRepository;
-import br.paulotrc.svcimovel.repositories.ImovelRepository;
-import br.paulotrc.svcimovel.repositories.MongoImovelRepository;
 import lombok.AllArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
-
-import java.util.List;
 
 @Service
 @AllArgsConstructor

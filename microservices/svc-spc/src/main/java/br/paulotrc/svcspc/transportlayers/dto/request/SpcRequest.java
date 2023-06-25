@@ -1,14 +1,13 @@
 package br.paulotrc.svcspc.transportlayers.dto.request;
 
-import br.paulotrc.svcspc.entites.enumerados.TipoRestricaoSpc;
-import br.paulotrc.svcspc.entites.validators.TipoRestricaoSpcValidator;
+import br.paulotrc.svcspc.entities.enumerados.TipoRestricaoSpc;
+import br.paulotrc.svcspc.entities.validators.TipoRestricaoSpcValidator;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Positive;
 import javax.validation.constraints.PositiveOrZero;
 import java.math.BigDecimal;
 import java.util.UUID;

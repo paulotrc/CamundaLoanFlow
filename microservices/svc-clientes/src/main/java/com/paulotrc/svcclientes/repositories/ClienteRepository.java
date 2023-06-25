@@ -1,7 +1,6 @@
 package com.paulotrc.svcclientes.repositories;
 
-import com.paulotrc.svcclientes.entites.Cliente;
-import org.springframework.data.mongodb.repository.Query;
+import com.paulotrc.svcclientes.entities.Cliente;
 
 import java.util.List;
 

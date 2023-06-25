@@ -1,6 +1,6 @@
 package br.paulotrc.svcimovel.repositories;
 
-import br.paulotrc.svcimovel.entites.Imovel;
+import br.paulotrc.svcimovel.entities.Imovel;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.mongodb.repository.Query;
 

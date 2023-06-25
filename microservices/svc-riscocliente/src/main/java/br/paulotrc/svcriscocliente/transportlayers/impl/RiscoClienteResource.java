@@ -1,9 +1,9 @@
 package br.paulotrc.svcriscocliente.transportlayers.impl;
 
-import br.paulotrc.svcriscocliente.entites.RiscoCliente;
+import br.paulotrc.svcriscocliente.entities.RiscoCliente;
 import br.paulotrc.svcriscocliente.exceptions.ExceptionUtil;
 import br.paulotrc.svcriscocliente.exceptions.ResourceException;
-import br.paulotrc.svcriscocliente.iteractors.RiscoClienteUseCase;
+import br.paulotrc.svcriscocliente.interactors.RiscoClienteUseCase;
 import br.paulotrc.svcriscocliente.transportlayers.RiscoClienteResourceI;
 import br.paulotrc.svcriscocliente.transportlayers.dto.request.RiscoClienteRequest;
 import br.paulotrc.svcriscocliente.transportlayers.dto.response.RiscoClienteResponse;

@@ -1,17 +1,14 @@
 package br.paulotrc.svcimovel.transportlayers.dto.request;
 
-import br.paulotrc.svcimovel.entites.enumerados.TipoImovel;
-import br.paulotrc.svcimovel.entites.enumerados.TipoRestricaoImovel;
-import br.paulotrc.svcimovel.entites.validators.TipoImovelValidator;
-import br.paulotrc.svcimovel.entites.validators.TipoRestricaoImovelValidator;
+import br.paulotrc.svcimovel.entities.enumerados.TipoImovel;
+import br.paulotrc.svcimovel.entities.enumerados.TipoRestricaoImovel;
+import br.paulotrc.svcimovel.entities.validators.TipoImovelValidator;
+import br.paulotrc.svcimovel.entities.validators.TipoRestricaoImovelValidator;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
-import org.springframework.beans.factory.annotation.Required;
-import org.springframework.validation.annotation.Validated;
 
 import javax.validation.constraints.*;
-import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.UUID;
 

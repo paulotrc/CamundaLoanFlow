@@ -1,6 +1,6 @@
 package br.paulotrc.svcserasa.repositories;
 
-import br.paulotrc.svcserasa.entites.Serasa;
+import br.paulotrc.svcserasa.entities.Serasa;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.mongodb.repository.Query;
 

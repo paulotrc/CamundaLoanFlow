@@ -1,6 +1,6 @@
 package br.paulotrc.svcspc.transportlayers.mappers;
 
-import br.paulotrc.svcspc.entites.Spc;
+import br.paulotrc.svcspc.entities.Spc;
 import br.paulotrc.svcspc.transportlayers.dto.request.SpcRequest;
 import br.paulotrc.svcspc.transportlayers.dto.response.SpcResponse;
 import org.mapstruct.Mapper;

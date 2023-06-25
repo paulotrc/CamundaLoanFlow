@@ -1,6 +1,6 @@
 package br.paulotrc.svcimovel.transportlayers.mappers;
 
-import br.paulotrc.svcimovel.entites.Imovel;
+import br.paulotrc.svcimovel.entities.Imovel;
 import br.paulotrc.svcimovel.transportlayers.dto.request.ImovelRequest;
 import br.paulotrc.svcimovel.transportlayers.dto.response.ImovelResponse;
 import org.mapstruct.Mapper;

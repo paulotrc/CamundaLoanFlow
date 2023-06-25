@@ -1,6 +1,6 @@
 package br.paulotrc.svcimovel.datasources.feign.configuration.apiCep;
 
-import br.paulotrc.svcimovel.entites.feign.ResponseApiCepData;
+import br.paulotrc.svcimovel.entities.feign.ResponseApiCepData;
 import br.paulotrc.svcimovel.exceptions.feign.GatewayResourceIntegrationRuntimeException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import feign.Response;

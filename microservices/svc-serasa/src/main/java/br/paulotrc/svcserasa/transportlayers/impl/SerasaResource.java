@@ -1,9 +1,9 @@
 package br.paulotrc.svcserasa.transportlayers.impl;
 
-import br.paulotrc.svcserasa.entites.Serasa;
+import br.paulotrc.svcserasa.entities.Serasa;
 import br.paulotrc.svcserasa.exceptions.ExceptionUtil;
 import br.paulotrc.svcserasa.exceptions.ResourceException;
-import br.paulotrc.svcserasa.iteractors.SerasaUseCase;
+import br.paulotrc.svcserasa.interactors.SerasaUseCase;
 import br.paulotrc.svcserasa.transportlayers.SerasaResourceI;
 import br.paulotrc.svcserasa.transportlayers.dto.request.SerasaRequest;
 import br.paulotrc.svcserasa.transportlayers.dto.response.SerasaResponse;

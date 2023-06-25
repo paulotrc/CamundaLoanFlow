@@ -1,6 +1,6 @@
 package br.paulotrc.svcspc.datasources;
 
-import br.paulotrc.svcspc.entites.Spc;
+import br.paulotrc.svcspc.entities.Spc;
 import br.paulotrc.svcspc.repositories.SpcRepository;
 import br.paulotrc.svcspc.repositories.MongoSpcRepository;
 import org.slf4j.Logger;

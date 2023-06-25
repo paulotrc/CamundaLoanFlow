@@ -1,6 +1,6 @@
 package br.paulotrc.svcserasa.datasources;
 
-import br.paulotrc.svcserasa.entites.Serasa;
+import br.paulotrc.svcserasa.entities.Serasa;
 import br.paulotrc.svcserasa.repositories.SerasaRepository;
 import br.paulotrc.svcserasa.repositories.MongoSerasaRepository;
 import org.slf4j.Logger;

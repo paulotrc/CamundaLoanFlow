@@ -1,7 +1,7 @@
 package br.paulotrc.svcriscocliente.transportlayers.dto.response;
 
-import br.paulotrc.svcriscocliente.entites.enumerados.TipoRiscoCliente;
-import br.paulotrc.svcriscocliente.entites.enumerados.TipoRestricaoRiscoCliente;
+import br.paulotrc.svcriscocliente.entities.enumerados.TipoRiscoCliente;
+import br.paulotrc.svcriscocliente.entities.enumerados.TipoRestricaoRiscoCliente;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;

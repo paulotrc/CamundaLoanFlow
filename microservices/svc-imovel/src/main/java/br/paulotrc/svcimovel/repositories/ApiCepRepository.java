@@ -1,6 +1,6 @@
 package br.paulotrc.svcimovel.repositories;
 
-import br.paulotrc.svcimovel.entites.feign.ResponseApiCepData;
+import br.paulotrc.svcimovel.entities.feign.ResponseApiCepData;
 import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
 import io.github.resilience4j.retry.annotation.Retry;
 
