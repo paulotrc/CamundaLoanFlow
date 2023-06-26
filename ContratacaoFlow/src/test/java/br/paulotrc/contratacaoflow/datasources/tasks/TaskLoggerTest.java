@@ -31,7 +31,7 @@ class TaskLoggerTest {
     void deve_executar_sem_erro() {
 
         Map<String, Object> variables = new HashMap<>();
-        variables.put("valor_pix","100.00");
+        variables.put("valor","100.00");
         Expression injectedProperty = mock(Expression.class);
         execution = mock(DelegateExecution.class);
         ReflectionTestUtils.setField(taskLogger, "injectedProperty", injectedProperty);
